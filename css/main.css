@@ -1,0 +1,18 @@
+/* =Body
+------------------------------ */
+body{
+	background-color: #ededed;
+}
+
+/* =Header
+------------------------------ */
+header {
+	overflow: hidden;
+	background-color: #39474f;
+	padding: 15px;
+	text-align: center;
+}
+
+header #logo {
+	height: 100px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="vendor/mediaelement/normalize.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/mediaelement/mediaelementplayer.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- Optional JavaScript -->
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+
+	<title>Conheça o HTTP! O seu melhor amigo na web</title>
+</head>
+<body>
+	<header class="mb-4">
+		<span>
+			<img id="logo" src="images/cocodificando.png?text=Cocodificando" alt="Cocodificando">
+		</span>
+	</header>
+	<div class="container-fluid main">
+		<div class="row">
+			<section class="col-12 col-md-8">
+				<div class="card mb-4">
+					<img class="card-img-top" src="images/thumb-001.jpg?text=Conheça o Http" alt="Conheça o Http">
+					<div class="media-wrapper">
+		                <audio id="player2" preload="none" controls style="max-width:100%;">
+		                    <source src="content/http-seu-melhor-amigo-na-web.mp3" type="audio/mp3">
+		                </audio>
+		            </div>
+					<div class="card-body">
+						<p class="card-subtitle mb-1 text-muted">17/09/2018</p>
+						<h4 class="card-title mb-0">Conheça o HTTP!</h4>
+						<h5 class="card-title">O seu melhor amigo na web - Cocodificando #1</h5>
+						<p class="card-text">Hypertext Transfer Protocol (HTTP) é o método utilizado para enviar e receber informações na web. A versão mais utilizada atualmente é a 1.1, definida pela especificação RFC 2616.</p>
+						<p class="card-text">O protocolo HTTP é baseado em requisições e respostas entre clientes e servidores. O cliente — navegador ou dispositivo que fará a requisição; também é conhecido como user agent — solicita um determinado recurso (resource), enviando um pacote de informações contendo alguns cabeçalhos (headers) a um URI ou, mais especificamente, URL. O servidor recebe estas informações e envia uma resposta, que pode ser um recurso ou um simplesmente um outro cabeçalho.</p>
+						<h6 class="card-title">Não deixe de ler também...</h6>
+						<p class="card-text">O Blog do <a href="https://nandovieira.com.br/entendendo-um-pouco-mais-sobre-o-protocolo-http" target="blank">Nando Vieira</a> que serviu como refeerência para este episódio, assim como a <a href="https://tools.ietf.org/html/rfc2616" target="blank">especificação</a> completa do protoco.</a></p>
+					</div>
+				</div>
+			</section>
+			<section class="col-12 col-md-4">
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">O que é o Cocodificando?</h5>
+						<p class="card-text">Somos um grupo de estudantes do sétimo semestre do curso de Engenharia da Computação que, nas horas vagas, nos reunimos com os amigos para conversar sobre tecnologia.</p>
+						<p class="card-text">Nosso principal objetivo é discutir os temas comuns, conceitos e tecnologias que são aplicados em nosso dia-a-dia de uma maneira menos técnica e mais divetida.</p>
+						<p class="card-text">Nada de futebol ou videogame, o negócio é cocodificar :)</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script src="vendor/mediaelement/mediaelement-and-player.min.js"></script>
+	<script type="text/javascript">
+		$('video, audio').mediaelementplayer({
+			// Configuration
+			success: function(media) {
+				var isNative = /html5|native/i.test(media.rendererName);
+
+				var isYoutube = ~media.rendererName.indexOf('youtube');
+
+				// etc.
+			}
+		});
+	</script>
+</body>
+</html>
